@@ -22,7 +22,12 @@ Healthchecks:
 
 - Me enfrenté a problemas como permisos insuficientes y errores de conexión al daemon de Docker en Windows. Aprendí a solucionar estos problemas ejecutando Docker con permisos elevados y asegurándome de que Docker Desktop estuviera en funcionamiento.
 - Solución de Problemas
-Durante la práctica, encontré un problema significativo:
+
+  
+#### Durante la práctica, encontré un problema significativo:
+### Error de Conexión al Daemon de Docker en Windows:
+- Problema: Al intentar ejecutar Docker Compose, recibí un error indicando que el cliente Docker no podía conectarse al daemon de Docker.
+- Solución: Descubrí que este problema se debía a que Docker no se estaba ejecutando con permisos elevados. La solución fue abrir PowerShell como administrador y asegurarme de que Docker Desktop estuviera ejecutándose. También ajusté la configuración del archivo docker-compose.yaml eliminando la clave version, ya que era obsoleta en las versiones más recientes de Docker Compose.
 
 ### Beneficios para la Formación Profesional
 Este ejercicio ha sido extremadamente valioso para mi formación profesional. He adquirido habilidades prácticas esenciales para trabajar con Docker y Docker Compose, herramientas que son ampliamente utilizadas en el desarrollo y despliegue de aplicaciones modernas. Estos conocimientos me permitirán configurar entornos de desarrollo y producción de manera eficiente, mejorar la resiliencia de los servicios y solucionar problemas de configuración de manera efectiva.
