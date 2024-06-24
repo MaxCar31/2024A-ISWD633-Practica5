@@ -38,7 +38,8 @@ docker compose up -d
 ### Ejecutar Docker compose para servicios que no se crearon correctamente
 Si algún servicio no se creó correctamente se puede usar
 ```
-docker compose up -d <nombre servicio>
+docker compose up -d mysql-service
+docker compose up -d wordpress-service
 ```
 
 ### Listar contenedores en ejecución que se crearon por docker compose
